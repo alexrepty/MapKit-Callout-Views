@@ -21,6 +21,8 @@
 		B4A664AB1854E150009B0ACB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A6648D1854E150009B0ACB /* UIKit.framework */; };
 		B4A664B31854E150009B0ACB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A664B11854E150009B0ACB /* InfoPlist.strings */; };
 		B4A664B51854E150009B0ACB /* MapKit_Callout_ViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A664B41854E150009B0ACB /* MapKit_Callout_ViewsTests.m */; };
+		B4A664C01854E1B5009B0ACB /* MAKRSampleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A664BF1854E1B5009B0ACB /* MAKRSampleAnnotation.m */; };
+		B4A664C21854E334009B0ACB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A664C11854E334009B0ACB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		B4A664B01854E150009B0ACB /* MapKit Callout-ViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapKit Callout-ViewsTests-Info.plist"; sourceTree = "<group>"; };
 		B4A664B21854E150009B0ACB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4A664B41854E150009B0ACB /* MapKit_Callout_ViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapKit_Callout_ViewsTests.m; sourceTree = "<group>"; };
+		B4A664BE1854E1B5009B0ACB /* MAKRSampleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAKRSampleAnnotation.h; sourceTree = "<group>"; };
+		B4A664BF1854E1B5009B0ACB /* MAKRSampleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAKRSampleAnnotation.m; sourceTree = "<group>"; };
+		B4A664C11854E334009B0ACB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A664C21854E334009B0ACB /* MapKit.framework in Frameworks */,
 				B4A6648C1854E150009B0ACB /* CoreGraphics.framework in Frameworks */,
 				B4A6648E1854E150009B0ACB /* UIKit.framework in Frameworks */,
 				B4A6648A1854E150009B0ACB /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		B4A664881854E150009B0ACB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4A664C11854E334009B0ACB /* MapKit.framework */,
 				B4A664891854E150009B0ACB /* Foundation.framework */,
 				B4A6648B1854E150009B0ACB /* CoreGraphics.framework */,
 				B4A6648D1854E150009B0ACB /* UIKit.framework */,
@@ -117,6 +124,8 @@
 				B4A6649B1854E150009B0ACB /* Main.storyboard */,
 				B4A6649E1854E150009B0ACB /* MAKRViewController.h */,
 				B4A6649F1854E150009B0ACB /* MAKRViewController.m */,
+				B4A664BE1854E1B5009B0ACB /* MAKRSampleAnnotation.h */,
+				B4A664BF1854E1B5009B0ACB /* MAKRSampleAnnotation.m */,
 				B4A664A11854E150009B0ACB /* Images.xcassets */,
 				B4A664901854E150009B0ACB /* Supporting Files */,
 			);
@@ -251,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4A664961854E150009B0ACB /* main.m in Sources */,
+				B4A664C01854E1B5009B0ACB /* MAKRSampleAnnotation.m in Sources */,
 				B4A664A01854E150009B0ACB /* MAKRViewController.m in Sources */,
 				B4A6649A1854E150009B0ACB /* MAKRAppDelegate.m in Sources */,
 			);
@@ -382,6 +392,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapKit Callout-Views/MapKit Callout-Views-Prefix.pch";
 				INFOPLIST_FILE = "MapKit Callout-Views/MapKit Callout-Views-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +406,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapKit Callout-Views/MapKit Callout-Views-Prefix.pch";
 				INFOPLIST_FILE = "MapKit Callout-Views/MapKit Callout-Views-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
