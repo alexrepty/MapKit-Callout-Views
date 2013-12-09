@@ -23,6 +23,7 @@
 		B4A664B51854E150009B0ACB /* MapKit_Callout_ViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A664B41854E150009B0ACB /* MapKit_Callout_ViewsTests.m */; };
 		B4A664C01854E1B5009B0ACB /* MAKRSampleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A664BF1854E1B5009B0ACB /* MAKRSampleAnnotation.m */; };
 		B4A664C21854E334009B0ACB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A664C11854E334009B0ACB /* MapKit.framework */; };
+		B4E1583718561C6000ED3895 /* MAKRCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E1583618561C6000ED3895 /* MAKRCalloutView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		B4A664BE1854E1B5009B0ACB /* MAKRSampleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAKRSampleAnnotation.h; sourceTree = "<group>"; };
 		B4A664BF1854E1B5009B0ACB /* MAKRSampleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAKRSampleAnnotation.m; sourceTree = "<group>"; };
 		B4A664C11854E334009B0ACB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B4E1583518561C6000ED3895 /* MAKRCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAKRCalloutView.h; sourceTree = "<group>"; };
+		B4E1583618561C6000ED3895 /* MAKRCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAKRCalloutView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				B4A6649F1854E150009B0ACB /* MAKRViewController.m */,
 				B4A664BE1854E1B5009B0ACB /* MAKRSampleAnnotation.h */,
 				B4A664BF1854E1B5009B0ACB /* MAKRSampleAnnotation.m */,
+				B4E1583518561C6000ED3895 /* MAKRCalloutView.h */,
+				B4E1583618561C6000ED3895 /* MAKRCalloutView.m */,
 				B4A664A11854E150009B0ACB /* Images.xcassets */,
 				B4A664901854E150009B0ACB /* Supporting Files */,
 			);
@@ -260,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4A664961854E150009B0ACB /* main.m in Sources */,
+				B4E1583718561C6000ED3895 /* MAKRCalloutView.m in Sources */,
 				B4A664C01854E1B5009B0ACB /* MAKRSampleAnnotation.m in Sources */,
 				B4A664A01854E150009B0ACB /* MAKRViewController.m in Sources */,
 				B4A6649A1854E150009B0ACB /* MAKRAppDelegate.m in Sources */,
@@ -473,6 +479,7 @@
 				B4A664BA1854E150009B0ACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4A664BB1854E150009B0ACB /* Build configuration list for PBXNativeTarget "MapKit Callout-ViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +488,7 @@
 				B4A664BD1854E150009B0ACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,9 @@
 #import "MAKRViewController.h"
 
 #import "MAKRSampleAnnotation.h"
+#import "MAKRCalloutView.h"
+
+NSString *const kMAKRViewControllerMapAnnotationViewReuseIdentifier = @"MAKRViewControllerMapAnnotationViewReuseIdentifier";
 
 @implementation MAKRViewController
 
@@ -25,6 +28,41 @@
 	
 	MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(annotation.coordinate, 1000.0, 1000.0);
 	[self.mapView setRegion:region];
+}
+
+#pragma mark -
+#pragma mark MKMapViewDelegate Methods
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+	MKAnnotationView *view = [mapView dequeueReusableAnnotationViewWithIdentifier:kMAKRViewControllerMapAnnotationViewReuseIdentifier];
+	return view;
+}
+
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views {
+	for (MKAnnotationView *annotationView in views) {
+		annotationView.canShowCallout = NO;
+	}
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
+	MAKRCalloutView *calloutView = [[MAKRCalloutView alloc] initWithFrame:CGRectMake(0.0, 0.0, 242.0, 57.0)];
+	
+	calloutView.titleLabel.text = view.annotation.title;
+	calloutView.subtitleLabel.text = view.annotation.subtitle;
+	calloutView.informationLabel.text = @"Today: AltTechTalks";
+	
+	calloutView.center = CGPointMake(CGRectGetWidth(view.bounds) / 2.0, 0.0);
+	[view addSubview:calloutView];
+}
+
+- (void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
+	for (UIView *subview in view.subviews) {
+		if (![subview isKindOfClass:[MAKRCalloutView class]]) {
+			continue;
+		}
+		
+		[subview removeFromSuperview];
+	}
 }
 
 @end
