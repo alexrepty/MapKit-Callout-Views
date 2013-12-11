@@ -4,7 +4,7 @@ MapKit Delegates
 Purpose
 -------
 
-Originally a piece of sample code for my talk entitled "What You Absolutely Cannot Do With MapKit", this example serves to illustrate how to add a custom callout view to an `MKAnnotationView`.
+Originally a piece of sample code for my talk entitled "[What You Absolutely Cannot Do With MapKit](http://cloud.alexrepty.com/3R330m053t1J)", this example serves to illustrate how to add a custom callout view to an `MKAnnotationView`.
 
 Explanation
 -----------
